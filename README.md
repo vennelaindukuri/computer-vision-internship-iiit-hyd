@@ -1,23 +1,30 @@
-# IIITHyderabad_Intership
-IIIT internship 2025 
-# 🧠 Internship Task 2 – Object Detection and Segmentation using YOLOv8
+## Internship Summary
 
-## 📌 Overview
-This project demonstrates **object detection and segmentation** using the **YOLOv8** model from the **Ultralytics** library.  
-The goal was to detect and segment objects in three categories of images — **animals**, **fruits**, and **traffic** — and evaluate the model’s performance metrics.
+This repository documents my computer vision internship work at IIIT Hyderabad, 
+using YOLOv8 (Ultralytics) for object detection.
 
-# 🎥 Internship Task 3 — Video to Object Detection using YOLO and FFmpeg
+### Task 1: Object Detection on Images
+Used a pretrained YOLOv8n model to detect multiple objects, people, and animals 
+in images. Covers environment setup, running inference, and interpreting detection 
+output (classes, confidence scores, bounding boxes).
 
-## 📌 Objective
-In this task, we take a **video clip** from a public source, convert it into a **sequence of image frames**, run **object detection** on each frame using the **YOLOv8 model**, and finally **reconstruct the processed frames back into a video**.
+### Task 2: Object Detection on Video
+Extended the same pretrained model to run detection frame-by-frame on video files, 
+producing an annotated output video with bounding boxes drawn across every frame.
 
-This experiment demonstrates how object detection can be extended from still images to videos using a frame-by-frame approach.
+### Task 3: Custom Model Training (Cats vs Dogs)
+Trained a custom YOLOv8 model from scratch on a labeled Cats vs Dogs dataset, 
+moving beyond pretrained detection into actual model training and evaluation. 
+Achieved strong results: **Precision: 0.983, Recall: 1.0, mAP50: 0.995, 
+mAP50-95: 0.879**. Learned to interpret confusion matrices, precision-recall 
+curves, and training loss curves.
 
 ---
 
-## ⚙️ Tools & Libraries Used
-- **Python 3.12**
-- **ultralytics (YOLOv8)** – for object detection and segmentation  
-- **FFmpeg** – for frame extraction and video stitching  
-- **Requests** – to download sample videos  
-- **OS** and **shutil** – for file and folder management  
+## Next Steps: Medical Imaging Focus
+
+For the remainder of this internship, I've chosen to focus on **applying 
+computer vision to the medical field** — specifically building a **pneumonia 
+detection model** using chest X-ray images. This direction lets me explore 
+object detection and classification techniques in a high-impact, real-world 
+domain, building on the YOLOv8 foundations from Tasks 1-3.
